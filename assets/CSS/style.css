@@ -5,4 +5,181 @@
     padding: 0;
     box-sizing: border-box;
 }
+a{
+    text-decoration: none;
+}
+ul{
+    list-style: none;
+}
+.active{
+    color: white;
+    text-decoration: underline;
+    font-weight: bold;
+}
+body, html{
+    overflow-x: hidden;
+}
+/**Navbar**/
+.navbar{
+  position: absolute; 
+  top: 0;
+  left: 0;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  padding: 20px;
+  color: rgb(255, 255, 255); 
+}
+.nav-links{
+    display: flex;
+    align-items: center;
+}
+.nav-links li {
+    margin: 0 60px;
+    position: relative;
+    color: whitesmoke;
+}
+.nav-links a {
+    font-size: 130%;
+    color: white;
+}
+header {
+    width: 100vw;
+    height: 100vh;
+    background-image: linear-gradient(rgba(4, 9, 30), rgba(4, 9, 30, 0.7)),
+      url(/assets/images/Mayatemple.jpg);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+.header-cont {
+    margin-bottom: 200px;
+    color: whitesmoke;
+    text-align: center;
+  }
+.header-cont h2 {
+    font-size: 7vmin;
+}
+.line{
+    width: 150px;
+    height: 4px;
+    background: rgb(9, 230, 35);
+    margin: 10px auto;
+    border-radius: 7vmin;
+}
+.header-cont h1 {
+    font-size: 7vmin;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.ctn{
+    padding: 5px 18px;
+    background: #1cbf4d;
+    color: whitesmoke;
+}
+.menu-btn{
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    width: 30px;
+    cursor: pointer;
+    display: none;
+}
+section {
+    width: 80%;
+    margin: 80px auto;
+}
+.title{
+    text-align: center;
+    font-size: 4vmin;
+    color: rgb(16, 177, 16);
+  }
+.rad{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+}
+.rad .kulm{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.eventer .rad{
+    margin-top: 50px;
+}
+h4{
+    font-size: 2.5vmin;
+    color: rgb(94, 104, 113);
+    margin: 20px auto;
+  }
+p {
+    color: rgb(105, 114, 122);
+}
+.tours{
+    width: 100%;
+    height: 80vh;
+    background-image: url("/assets/images/chichenitzatours.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center
+}
+.tours-available {
+    width: 55%;
+    padding: 60px;
+    color: white;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.tours-available h1 {
+    font-size: 7vmin;
+    margin: 60px;
+}
+.tours-available{
+    color: whitesmoke;
+}
+.tours-available .ctn{
+    margin-top: 30px;
+}
 
+
+/*------Mobile Device------*/
+@media only screen and (max-width: 850px) {
+    .menu-btn {
+      display: block;
+    }
+    .navbar {
+      padding: 0;
+    }
+    .logo {
+      position: absolute;
+      top: 30px;
+      left: 30px;
+    }
+    .nav-links {
+      flex-direction: column;
+      width: 100%;
+      height: 100vh;
+      justify-content: center;
+      /*background: lightblue;*/
+      margin-top: -750px;
+      transition: all 0.5s ease;
+    }
+    .mobile-menu {
+      margin-top: 0px;
+    }
+    .nav-links li {
+      margin: 40px auto;
+    }
+    .contact-box {
+      grid-template-columns: 1fr;
+    }
+    .left {
+      height: 200px;
+    }
+  }
